@@ -1,0 +1,273 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Content
+==================================================
+	#Reset & Basics
+	#Basic Styles
+	#Typography
+	#Links
+	#Browser Fix
+	#Misc
+
+
+/* #Reset & Basics (Inspired by E. Meyers)
+================================================== */
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+	-webkit-box-sizing :border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+
+* { margin:0; padding:0; }
+
+html { overflow-y: scroll; }
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline; 
+		text-decoration:none;}
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block; }
+
+	ol, ul {
+		list-style: none; }
+	blockquote, q {
+		quotes: none; }
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none; }
+	table {
+		border-collapse: collapse;
+		border-spacing: 0; }
+
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
+}
+
+
+section{
+	overflow:hidden;
+	position: relative;
+}
+
+		
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+#map img { max-width: none; }
+
+*::-moz-selection {
+    background: #111111;
+    color: #ffffff;
+}
+
+a:focus {
+outline: 0;
+}
+
+iframe{width:100%;frameborder:0;display:inline-block;}
+	
+
+
+/* #Basic Styles
+================================================== */
+	body {
+		background: #ffffff;
+		font: 13px/21px "montserratregular",Arial,sans-serif;
+		color: #999999;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+		margin:0;
+		letter-spacing:1px;
+		-webkit-text-stroke: 0.25px;
+
+
+		
+ }
+
+
+
+
+
+
+/* #Typography and #Common style
+================================================== */
+	h1, h2, h3, h4, h5, h6 {color: #181818;font-weight: normal;text-transform:uppercase;margin-bottom:10px;}
+	
+
+	
+	
+	
+	h2{font-size:18px;}
+	h3{font-size:15px;margin-bottom:10px;}
+	
+	em { font-style: italic; }
+	strong {color: #181818; }
+	small { font-size: 80%; }
+	
+	.smallIntro p {
+	    color: #ffffff;
+	    display: inline-block;
+	    font-size: 20px;
+	}
+	
+	.largeIntro, .projIntro, .pSingleIntro{
+		width:70%;
+		margin:0 auto;
+	}
+	
+	
+	.title, .link {
+	    border-bottom: 2px solid #181818;
+	    color: #181818;
+	    display: inline-block;
+	    font-size: 12px;
+	    letter-spacing: 1px;
+		text-transform:uppercase;
+	}
+	
+	
+	
+	
+	.title-light, .link-light {
+	    border-bottom: 2px solid #ffffff;
+	    color: #ffffff;
+	}
+	
+	
+	
+	p{
+		line-height:22px;
+		font-size:12px;
+	}
+	
+
+	
+	
+	nav ul.menu li, p, nav ul.cart li, .hero .left-intro h1 span , .intro-alt h1 span, .main-slider .caption span, .about .profile-info h1 span , .about-intro  h1 span, .album-cat li, .info-inner  span, .prod-info span.prod-price, .prod-price, .prod-quantity , 
+	.review-meta .rating, .review-meta span.author, .review-meta span.time, .post-meta h5, .meta-bottom ul li, .contact-info h1, .contact-form h1{
+		font-family: 'montserratlight',Arial,sans-serif;
+	}
+	
+	
+	.hero .left-intro h1, .hero .content blockquote h1 , .intro-alt h1, .main-slider .caption h1, .about .profile-info h1 , .about-intro h1, .post-title h1 a{
+	    font-family: 'montserratbold',Arial,sans-serif;
+
+	}
+	
+	
+	
+	.hero .content blockquote p {
+		font-family: 'montserrathairline',Arial,sans-serif;
+
+	}
+	
+	
+	.footer p{
+		font-family:"montserratregular",Arial,sans-serif;
+	}
+	
+	
+
+/* #Links
+================================================== */
+	
+	a, .work-info .info-inner, .dropdown-holder .dropdown, .prod-info .prod-inner, input[type="text"],  textarea, .work:hover .background-image, .work:hover img  {
+		
+		transition: all 0.3s ease-in-out 0s;
+		-ms-transition: all 0.3s ease-in-out 0s;
+		-webkit-transition:all 0.3s ease-in-out 0s;
+		-moz-transition: all 0.3s ease-in-out 0s;
+		-o-transition: all 0.3s ease-in-out 0s;
+		
+		
+		
+	}
+	
+	
+	
+/* #Browser Fix
+================================================== */
+
+
+
+	.pagination ul li , .testimonials, .socials, .hero .left-intro, .hero .right-intro, .background-image.profile, .footer, .about-alt-holder, .about-intro , .about-img, .contact-holder, 
+.contact-info.info-left, .contact-form.info-right, input[type="submit"] ,input[type="text"],textarea, .contact-form form input[type="submit"], form, .comments .author-img, .pagination, .product-row, .product-container, .prod-details, .contact-info , 
+.flex-control-nav, .flex-control-paging, .main-slider .flex-direction-nav .flex-next, .main-slider .flex-direction-nav .flex-prev
+, .album-cat, .work, .work.masonry img, .client-holder, .client-list li, .album-cat.fixed {
+
+ 			box-sizing:border-box;
+			-moz-box-sizing:border-box; /* Firefox */
+		}
+
+
+
+/* #Misc
+================================================== */
+	.ofsTopH{padding-top:160px !important;}
+	.ofsBottomH{padding-bottom:160px !important;}
+	.ofsBottomL{padding-bottom:100px !important;}
+	.ofsTopL{padding-top:100px !important;}
+	.ofsBottom{padding-bottom:80px !important;}
+	.ofsTop{padding-top:80px !important;}
+	.ofsBottomM{padding-bottom:70px !important;}
+	.ofsTopM{padding-top:70px !important;}
+	.tCenter {text-align: center;}
+	.tLeft {text-align: left;}
+	.tRight {text-align: right;}
+	.ofsInMTop{padding-top:50px !important;}
+	.ofsInMBottom{padding-bottom:50px !important;}
+	.ofsInTop{padding-top:60px !important;}
+	.ofsInBottom{padding-bottom:60px !important;}
+	.ofsTMedium{padding-top:40px !important;} 
+	.ofsBMedium{padding-bottom:40px !important;}
+	.ofsTSmall{padding-top:20px !important;} 
+	.ofsBSmall{padding-bottom:20px !important;}
+	.ofsT-Small{padding-top:30px !important;} 
+	.ofsB-Small{padding-bottom:30px !important;}
+	.margTMedium{margin-top:40px !important;}
+	.margBMedium{margin-bottom:40px !important;}
+	.margTop{margin-top:60px !important;}
+	.margMTop{margin-top:70px !important;}
+	.margLTop{margin-top:80px !important;}
+	.margBottom{margin-bottom:60px !important;}
+	.margMBottom{margin-bottom:70px !important;}
+	.margLBottom{margin-bottom:80px !important;}
+	.margHBottom{margin-bottom:100px !important;}
+	.margHTop{margin-top:100px !important;}
+	.margHHTop{margin-top:150px !important;}
+	.margHHBottom{margin-bottom:150px !important;}
+	.singleOffset{margin-top:71px !important;}
+	.blogSingle.singleOffset {margin-top: 64px !important;}
+	.bgGrey{background:#f1f1f1;}
+	.bgWhite{background:#ffffff;}
+	.bgDark{background:#181818;}
+	.bgYellow{background:#e59e05;}
+	.secTitle.pricingTitle h1{color:#f4f4f4;}
+	.noGap{margin:0 !important;width: 200px !important;}
+	.noMRight{margin-left:0 !important;}
+	
+
